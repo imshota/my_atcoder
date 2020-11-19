@@ -30,5 +30,5 @@ echo
 echo "end testing"
 
 echo "OK case : $OKcase / $((OKcase+WRcase))"
-echo "WR case : $OKcase / $((WRcase+WRcase))"
+echo "WR case : $WRcase / $((OKcase+WRcase))"
 make clean
