@@ -6,6 +6,4 @@ jobs:
     steps:
       - checkout
       - run:
-        command: |
-          echo "hello world"
-          ./test.sh a
+        ./test.sh a
