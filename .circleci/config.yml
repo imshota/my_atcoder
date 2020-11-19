@@ -5,4 +5,14 @@ jobs:
       - image: circleci/ruby:2.4.1
     steps:
       - checkout
+      - run:
+          name: create artifacts
+          command: |
+            echo "my artifact file" > /tmp/artifact-1;
+            mkdir /tmp/artifacts;
+            echo "my artifact files in a dir" > /tmp/artifacts/artifact-2;
+
+      - store_artifacts:
+          path: /tmp/artifact-1
+          destination: artifact-file
       - run: make ci
