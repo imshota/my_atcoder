@@ -5,5 +5,7 @@ jobs:
       - image: circleci/ruby:2.4.1
     steps:
       - checkout
-      - run: echo "hello world"
-             ./test.sh a
+      - run:
+        command: |
+          echo "hello world"
+          ./test.sh a
