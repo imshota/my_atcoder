@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ./ABC/171
+    working_directory: ~/ABC/171
     docker:
       - image: circleci/ruby:2.4.1
     steps:
