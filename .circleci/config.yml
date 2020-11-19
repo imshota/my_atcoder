@@ -6,4 +6,4 @@ jobs:
       - image: circleci/ruby:2.4.1
     steps:
       - checkout
-      - run: source test.sh a
+      - run: ls
