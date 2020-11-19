@@ -1,7 +1,9 @@
 #!/bin/bash
 FIND_DIR=./$1/in
+WORK_DIR=/Users/shota/Documents/tsclass/my_atcoder/ABC/171
 
-make
+cd $WORK_DIR
+make -s
 echo "start testing"
 echo
 
@@ -31,4 +33,4 @@ echo "end testing"
 
 echo "OK case : $OKcase / $((OKcase+WRcase))"
 echo "WR case : $WRcase / $((OKcase+WRcase))"
-make clean
+make clean -s
