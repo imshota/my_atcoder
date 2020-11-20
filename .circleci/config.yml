@@ -15,4 +15,4 @@ jobs:
       - store_artifacts:
           path: /tmp/artifact-1
           destination: artifact-file
-      - run: make ci
+      - run: ./ABC/171/test.sh
