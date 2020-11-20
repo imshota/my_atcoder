@@ -10,7 +10,7 @@ EXE := $(CPP_FILES:%.cpp=%.out)
 all: $(EXE)
 
 ./%.out : %.cpp
-		$(CXX) $(CXX_FLAGS) -o $@ $<
+		$(CXX) -o $@ $<
 
 clean:
 		rm -rf $(EXE)
